@@ -4,5 +4,11 @@
     float: left;
 }
 .number{
+	height: auto;
+	width: 20%;
 float:right;
+background-color: #999494;
 } 
+.number p{
+	float: right;
+}

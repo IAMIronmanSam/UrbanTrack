@@ -94,7 +94,7 @@ $(document).ready(function(){
 */
 
     
-var Paper = new Raphael('canvas',800,760);
+var Paper = new Raphael('canvas',1000,760);
 
 var elementArray=[];
 CarLocation=function(options){
