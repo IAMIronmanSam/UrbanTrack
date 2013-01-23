@@ -12,3 +12,6 @@ background-color: #999494;
 .number p{
 	float: right;
 }
+.number #newB{
+	margin-left: 80px;
+}
