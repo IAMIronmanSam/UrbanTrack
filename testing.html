@@ -2,8 +2,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Plugin Testing</title>
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 	<script type="text/javascript" src="js/raphael-min.js"></script>
 	<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
 		// Creates canvas 320 × 200 at 10, 50
 		var paper = Raphael(10, 50, 320, 200);
 
@@ -14,10 +16,12 @@
 
 		// Sets the stroke attribute of the circle to white
 		circle.attr("stroke", "#fff");
+		var c = paper.image("img/magic_dice.jpeg", 10, 10, 80, 80);
+	});
 	</script>	
 </head>
 <body>
-	Hi Hello
+<!--<img src="img/magic_dice.jpeg" width="64" height="64" alt="Magic Dice"> -->
 </body>
 
 </html>
