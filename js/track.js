@@ -95,20 +95,23 @@ $(document).ready(function(){
 
     
 var Paper = new Raphael('canvas',1000,760);
-
+	var anim = Raphael.animation({cx: 10, cy: 20}, 2e3);
 var elementArray=[];
 CarLocation=function(options){
+	
     for (var i = elementArray.length - 1; i >= 0; i--) {
         elementArray[i].remove();
     };
     for (var i = 0;i<options.cars.length;i++) {
+	
         if(options.cars[i].exist)
         {
             block=options.cars[i].block-1;//Since We are referring to an array and count starts from 0
             var cx=path.grid[block].x+Math.round(Math.random()*80);
             var cy=10+path.grid[block].y+Math.round(Math.random()*80);
 			
-            elementArray.push(Paper.image(options.cars[i].src, cx,cy,70,30));
+			
+            elementArray.push(Paper.image(options.cars[i].src, cx,cy,70,30).animate(anim));
 			
 
         }
@@ -157,7 +160,7 @@ var stripBuilder=function(RoadPatch,Paper,grid){
 //Generated the Road
 var roadBuilder=function(RoadPatch,Paper,grid){
                     return Paper.rect(grid.x,grid.y+RoadPatch.getSettings().sidewalkWidth, RoadPatch.getSettings().RoadPatchLength, RoadPatch.getSettings().RoadPatchWidth).attr({
-                            'fill': '#3D6E99',
+                            'fill': '#000000',
                             'stroke': '#3D6E99'
                         });
                        
