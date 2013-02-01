@@ -1,3 +1,6 @@
+body{
+	background-color: #f7b03d;
+}
 #canvas{
     width:auto;
     height:auto;
@@ -6,12 +9,18 @@
 .number{
 	height: auto;
 	width: 20%;
-float:right;
-background-color: #999494;
+margin-left: 15px;
+float: left;
+background-color: #68b553;
+box-shadow: 10px 10px 5px #5b5b5b;
 } 
-.number p{
-	float: right;
+.number p {
+	margin-left: 50px;
 }
 .number #newB{
 	margin-left: 80px;
+}
+h2{
+	margin-left: 40px;
+	text-shadow:3px 3px 3px #66625d;
 }
