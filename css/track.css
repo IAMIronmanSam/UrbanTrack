@@ -17,10 +17,27 @@ box-shadow: 10px 10px 5px #5b5b5b;
 .number p {
 	margin-left: 50px;
 }
-.number #newB{
-	margin-left: 80px;
+ #newB{
+	margin-left: 30px;
 }
 h2{
 	margin-left: 40px;
 	text-shadow:3px 3px 3px #66625d;
+}
+#newB #logo{
+	margin-left: 0px;
+	float: left;
+	box-shadow: 1px 0px 5px 5px rgba(255, 255, 255, 0.7);
+}
+
+#newB #dice{ 
+	margin-left: 70px;
+}
+
+#newB #new{
+	margin-left: 50px;
+}
+
+#submit{
+	margin-left: 50px;
 }

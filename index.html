@@ -7,9 +7,10 @@
 <div class="number" >
 	<div id="newB">
 		<br>
-	<button >New Game</button><br><br>
-	Player Turn<br><br>
-	<img src="img/magic_dice.png"/><br>
+	<button id="new" >New Game</button><br><br>
+	
+	<img id="logo" src="img/logo200.png"><br><br><br><br>
+	<img  id="dice"src="img/magic_dice.png"/><br>
 	
 	</div>
 	<p>car1:<input type="text" id="car1"/></p>
@@ -17,9 +18,9 @@
 	<p>car3:<input type="text" id="car3"/></p>
 	<p>car4:<input type="text" id="car4"/></p>
 	<p>car5:<input type="text" id="car5"/></p>
-	<p style="color:red">value > 50</p>
+	<p style="color:#c62121">value > 50</p>
 	<p><input type="submit" id="submit"/></p>
-	<h2>Urban Traveller</h2>
+	
 </div>
 
 <script>
@@ -35,6 +36,7 @@ $(document).ready(function(){
 					        'block':c1,
 					        'exist':true,
 					        'color':'yellow',
+							'src':'img/car1.png',
 							'src':'img/car1.png'
 					    },
 					    {
