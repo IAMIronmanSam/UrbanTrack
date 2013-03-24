@@ -1,0 +1,25 @@
+.number{
+	height: auto;
+	width: 20%;
+	margin-right: 23%;
+	margin-top: 20px;
+	background-color: #68b553;
+	box-shadow: 7px 7px 26px;
+	float: right;
+	
+} 
+.number p {
+	margin-left: 50px;
+}
+.number #content{
+	margin-left: 90px;
+}
+h2{
+	margin-left: 40px;
+	text-shadow:3px 3px 3px #66625d;
+}
+
+#logo{
+	margin-left: -70px;
+	box-shadow: 7px 7px 26px;
+}

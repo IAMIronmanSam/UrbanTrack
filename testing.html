@@ -7,7 +7,7 @@
 	<script type="text/javascript" charset="utf-8">
 	$(document).ready(function(){
 		// Creates canvas 320 × 200 at 10, 50
-		var paper = Raphael(10, 50, 320, 200);
+		var paper = Raphael('canvas', 500, 600);
 
 		// Creates circle at x = 50, y = 40, with radius 10
 		var circle = paper.circle(50, 40, 10);
@@ -16,12 +16,22 @@
 
 		// Sets the stroke attribute of the circle to white
 		circle.attr("stroke", "#fff");
-		var c = paper.image("img/magic_dice.jpeg", 10, 10, 80, 80);
+		var anim = Raphael.animation({cx: 500, cy: 500}, 2e3);
+		var c = paper.image("./img/magic_dice.png", 100, 100, 80, 80);
+		c.animate(anim);
 	});
 	</script>	
+	<style type="text/css">
+	#canvas{
+		width: 500px;
+		height: 600px;
+		background-color: yellow;
+	}
+	</style>
 </head>
 <body>
 <!--<img src="img/magic_dice.jpeg" width="64" height="64" alt="Magic Dice"> -->
+<div id="canvas"></div>
 </body>
 
 </html>

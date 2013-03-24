@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Kinetic Cars</title>
+        <link rel="stylesheet" type="text/css" href="css/kieticcars.css"/>
+        <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+        <script src="js/kinetic-v4.3.3.min.js"></script>
+    	<script src="js/KineticCar.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        	$('#newG').click(function(){
+        		UB.addCar(5);
+        	});
+        	$('#dice').click(function(){
+        		UB.moveCar(5,8);
+        	});
+        });
+        </script>
+    </head>
+    <body>
+    <div id="container"> 
+    <div class="number" >
+		<div id="content">
+		<br>
+	<button id="newG">Add Car</button><br><br>
+	<img id="logo" src="images/UrbenTravellers200.png"/><br><br>
+	<img id="dice" src="images/magic_dice.png" alt="Dice"/><br>
+	
+	</div>
+	<!--<p>car1:<input type="text" id="car1"/></p>
+	<p>car2:<input type="text" id="car2"/></p>
+	<p>car3:<input type="text" id="car3"/></p>
+	<p>car4:<input type="text" id="car4"/></p>
+	<p>car5:<input type="text" id="car5"/></p>
+	<p style="color:red">Please dont put any value greater than 100</p> 
+	<p><input type="submit" id="submit"/></p>-->
+	<p>Roll the dice to GO!</p>
+	<br>
+
+</div>
+</div>
+   
+    </body>
+</html>
