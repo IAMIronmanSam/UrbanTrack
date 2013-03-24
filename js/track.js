@@ -13,49 +13,49 @@ $(document).ready(function(){
     {'x':800,'y':0},
     {'x':900,'y':0},
     //2nd Row
-    {'x':900,'y':140},
-    {'x':800,'y':140},
-    {'x':700,'y':140},
-    {'x':600,'y':140},
-    {'x':500,'y':140},
-    {'x':400,'y':140},
-    {'x':300,'y':140},
-    {'x':200,'y':140},
-    {'x':100,'y':140},
-    {'x':0,'y':140},
+    {'x':900,'y':120},
+    {'x':800,'y':120},
+    {'x':700,'y':120},
+    {'x':600,'y':120},
+    {'x':500,'y':120},
+    {'x':400,'y':120},
+    {'x':300,'y':120},
+    {'x':200,'y':120},
+    {'x':100,'y':120},
+    {'x':0,'y':120},
     //3rd Row
-    {'x':0,'y':280},
-    {'x':100,'y':280},
-    {'x':200,'y':280},
-    {'x':300,'y':280},
-    {'x':400,'y':280},
-    {'x':500,'y':280},
-    {'x':600,'y':280},
-    {'x':700,'y':280},
-    {'x':800,'y':280},
-    {'x':900,'y':280},
+    {'x':0,'y':240},
+    {'x':100,'y':240},
+    {'x':200,'y':240},
+    {'x':300,'y':240},
+    {'x':400,'y':240},
+    {'x':500,'y':240},
+    {'x':600,'y':240},
+    {'x':700,'y':240},
+    {'x':800,'y':240},
+    {'x':900,'y':240},
     //4th Row
-    {'x':900,'y':420},
-    {'x':800,'y':420},
-    {'x':700,'y':420},
-    {'x':600,'y':420},
-    {'x':500,'y':420},
-    {'x':400,'y':420},
-    {'x':300,'y':420},
-    {'x':200,'y':420},
-    {'x':100,'y':420},
-    {'x':0,'y':420},
+    {'x':900,'y':360},
+    {'x':800,'y':360},
+    {'x':700,'y':360},
+    {'x':600,'y':360},
+    {'x':500,'y':360},
+    {'x':400,'y':360},
+    {'x':300,'y':360},
+    {'x':200,'y':360},
+    {'x':100,'y':360},
+    {'x':0,'y':360},
     //5th Row
-    {'x':0,'y':560},
-    {'x':100,'y':560},
-    {'x':200,'y':560},
-    {'x':300,'y':560},
-    {'x':400,'y':560},
-    {'x':500,'y':560},
-    {'x':600,'y':560},
-    {'x':700,'y':560},
-    {'x':800,'y':560},
-    {'x':900,'y':560}]
+    {'x':0,'y':480},
+    {'x':100,'y':480},
+    {'x':200,'y':480},
+    {'x':300,'y':480},
+    {'x':400,'y':480},
+    {'x':500,'y':480},
+    {'x':600,'y':480},
+    {'x':700,'y':480},
+    {'x':800,'y':480},
+    {'x':900,'y':480}]
 };
 /*
 {
@@ -95,19 +95,23 @@ $(document).ready(function(){
 
     
 var Paper = new Raphael('canvas',1000,760);
-
+	var anim = Raphael.animation({cx: 10, cy: 20}, 2e3);
 var elementArray=[];
 CarLocation=function(options){
+	
     for (var i = elementArray.length - 1; i >= 0; i--) {
         elementArray[i].remove();
     };
     for (var i = 0;i<options.cars.length;i++) {
+	
         if(options.cars[i].exist)
         {
             block=options.cars[i].block-1;//Since We are referring to an array and count starts from 0
             var cx=path.grid[block].x+Math.round(Math.random()*80);
             var cy=10+path.grid[block].y+Math.round(Math.random()*80);
-            elementArray.push(Paper.image(options.cars[i].src, cx,cy,60,30));
+			
+			
+            elementArray.push(Paper.image(options.cars[i].src, cx,cy,70,30).animate(anim));
 			
 
         }
@@ -167,6 +171,7 @@ var init=function(RoadPatch,Paper,grid){
     stripBuilder(RoadPatch,Paper,grid);
     upperStrip(RoadPatch,Paper,grid);
     lowerStrip(RoadPatch,Paper,grid);
+//Paper.image("img/checkered_flag.png", 20,20,70,70);
 }
 
 

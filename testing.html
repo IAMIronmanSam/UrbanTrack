@@ -16,9 +16,16 @@
 
 		// Sets the stroke attribute of the circle to white
 		circle.attr("stroke", "#fff");
+<<<<<<< HEAD
 		var anim = Raphael.animation({cx: 500, cy: 500}, 2e3);
 		var c = paper.image("./img/magic_dice.png", 100, 100, 80, 80);
 		c.animate(anim);
+=======
+	
+		var anim = Raphael.animation({cx: 10, cy: 20}, 2e3);
+		circle.animate(anim); // run the given animation immediately
+		//circle.animate(anim.delay(500)); // run the given animation after 500 ms
+>>>>>>> 46dc3ef984fed79c2c586003be1d42f67c1bd41c
 	});
 	</script>	
 	<style type="text/css">
