@@ -32,7 +32,7 @@ var path={
     {'x':300,'y':120,'s':false,'b':false,'e':0},
     {'x':350,'y':120,'s':false,'b':false,'e':0},
     {'x':400,'y':120,'s':false,'b':false,'e':0},
-    {'x':450,'y':120,'s':false,'b':false,'e':3},
+    {'x':450,'y':120,'s':false,'b':false,'e':2},
     //4th Row
     {'x':450,'y':180,'s':false,'b':false,'e':4},
     {'x':400,'y':180,'s':false,'b':false,'e':0},
@@ -79,7 +79,7 @@ var path={
     {'x':300,'y':360,'s':false,'b':true,'e':0},
     {'x':350,'y':360,'s':false,'b':false,'e':0},
     {'x':400,'y':360,'s':false,'b':false,'e':0},
-    {'x':450,'y':360,'s':false,'b':false,'e':3},
+    {'x':450,'y':360,'s':false,'b':false,'e':2},
     
     //Eight Row
     {'x':450,'y':420,'s':false,'b':false,'e':4},
