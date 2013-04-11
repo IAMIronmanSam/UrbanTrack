@@ -10,9 +10,9 @@ var path={
     {'x':300,'y':0,'s':false,'b':false,'e':0},
     {'x':350,'y':0,'s':false,'b':false,'e':0},
     {'x':400,'y':0,'s':true,'b':false,'e':0},
-    {'x':450,'y':0,'s':false,'b':false,'e':1},
+    {'x':450,'y':0,'s':false,'b':false,'e':2},
     //2nd Row
-    {'x':450,'y':60,'s':false,'b':false,'e':1},
+    {'x':450,'y':60,'s':false,'b':false,'e':4},
     {'x':400,'y':60,'s':false,'b':false,'e':0},
     {'x':350,'y':60,'s':false,'b':false,'e':0},
     {'x':300,'y':60,'s':false,'b':true,'e':0},
@@ -21,9 +21,9 @@ var path={
     {'x':150,'y':60,'s':false,'b':false,'e':0},
     {'x':100,'y':60,'s':false,'b':false,'e':0},
     {'x':50,'y':60,'s':false,'b':true,'e':0},
-    {'x':0,'y':60,'s':false,'b':false,'e':1},
+    {'x':0,'y':60,'s':false,'b':false,'e':2},
     //3rd Row
-    {'x':0,'y':120,'s':false,'b':false,'e':1},
+    {'x':0,'y':120,'s':false,'b':false,'e':4},
     {'x':50,'y':120,'s':false,'b':false,'e':0},
     {'x':100,'y':120,'s':false,'b':false,'e':0},
     {'x':150,'y':120,'s':false,'b':false,'e':0},
@@ -32,9 +32,9 @@ var path={
     {'x':300,'y':120,'s':false,'b':false,'e':0},
     {'x':350,'y':120,'s':false,'b':false,'e':0},
     {'x':400,'y':120,'s':false,'b':false,'e':0},
-    {'x':450,'y':120,'s':false,'b':false,'e':1},
+    {'x':450,'y':120,'s':false,'b':false,'e':3},
     //4th Row
-    {'x':450,'y':180,'s':false,'b':false,'e':0},
+    {'x':450,'y':180,'s':false,'b':false,'e':4},
     {'x':400,'y':180,'s':false,'b':false,'e':0},
     {'x':350,'y':180,'s':false,'b':false,'e':0},
     {'x':300,'y':180,'s':false,'b':false,'e':0},
@@ -43,10 +43,10 @@ var path={
     {'x':150,'y':180,'s':false,'b':false,'e':0},
     {'x':100,'y':180,'s':false,'b':false,'e':0},
     {'x':50,'y':180,'s':false,'b':false,'e':0},
-    {'x':0,'y':180,'s':false,'b':false,'e':1},
+    {'x':0,'y':180,'s':false,'b':false,'e':2},
     //5th Row
 
-    {'x':0,'y':240,'s':false,'b':false,'e':1},
+    {'x':0,'y':240,'s':false,'b':false,'e':4},
     {'x':50,'y':240,'s':false,'b':false,'e':0},
     {'x':100,'y':240,'s':false,'b':false,'e':0},
     {'x':150,'y':240,'s':false,'b':false,'e':0},
@@ -55,10 +55,10 @@ var path={
     {'x':300,'y':240,'s':false,'b':false,'e':0},
     {'x':350,'y':240,'s':false,'b':false,'e':0},
     {'x':400,'y':240,'s':false,'b':false,'e':0},
-    {'x':450,'y':240,'s':false,'b':false,'e':1},
+    {'x':450,'y':240,'s':false,'b':false,'e':2},
     
     //Sixth Row
-    {'x':450,'y':300,'s':false,'b':false,'e':1},
+    {'x':450,'y':300,'s':false,'b':false,'e':4},
     {'x':400,'y':300,'s':false,'b':false,'e':0},
     {'x':350,'y':300,'s':false,'b':false,'e':0},
     {'x':300,'y':300,'s':false,'b':false,'e':0},
@@ -67,10 +67,10 @@ var path={
     {'x':150,'y':300,'s':false,'b':false,'e':0},
     {'x':100,'y':300,'s':false,'b':true,'e':0},
     {'x':50,'y':300,'s':false,'b':false,'e':0},
-    {'x':0,'y':300,'s':false,'b':false,'e':1},
+    {'x':0,'y':300,'s':false,'b':false,'e':2},
     
     //Seventh Row
-    {'x':0,'y':360,'s':false,'b':false,'e':1},
+    {'x':0,'y':360,'s':false,'b':false,'e':4},
     {'x':50,'y':360,'s':false,'b':false,'e':0},
     {'x':100,'y':360,'s':false,'b':false,'e':0},
     {'x':150,'y':360,'s':false,'b':false,'e':0},
@@ -79,10 +79,10 @@ var path={
     {'x':300,'y':360,'s':false,'b':true,'e':0},
     {'x':350,'y':360,'s':false,'b':false,'e':0},
     {'x':400,'y':360,'s':false,'b':false,'e':0},
-    {'x':450,'y':360,'s':false,'b':false,'e':1},
+    {'x':450,'y':360,'s':false,'b':false,'e':3},
     
     //Eight Row
-    {'x':450,'y':420,'s':false,'b':false,'e':1},
+    {'x':450,'y':420,'s':false,'b':false,'e':4},
     {'x':400,'y':420,'s':false,'b':false,'e':0},
     {'x':350,'y':420,'s':false,'b':false,'e':0},
     {'x':300,'y':420,'s':false,'b':false,'e':0},
@@ -91,10 +91,10 @@ var path={
     {'x':150,'y':420,'s':false,'b':false,'e':0},
     {'x':100,'y':420,'s':false,'b':false,'e':0},
     {'x':50,'y':420,'s':false,'b':false,'e':0},
-    {'x':0,'y':420,'s':false,'b':false,'e':1},
+    {'x':0,'y':420,'s':false,'b':false,'e':2},
     
     //Nineth Row
-    {'x':0,'y':480,'s':false,'b':false,'e':1},
+    {'x':0,'y':480,'s':false,'b':false,'e':4},
     {'x':50,'y':480,'s':false,'b':false,'e':0},
     {'x':100,'y':480,'s':false,'b':false,'e':0},
     {'x':150,'y':480,'s':false,'b':false,'e':0},
@@ -103,10 +103,10 @@ var path={
     {'x':300,'y':480,'s':false,'b':false,'e':0},
     {'x':350,'y':480,'s':false,'b':false,'e':0},
     {'x':400,'y':480,'s':false,'b':true,'e':0},
-    {'x':450,'y':480,'s':false,'b':false,'e':1},
+    {'x':450,'y':480,'s':false,'b':false,'e':2},
     
     //Tenth Row
-   {'x':450,'y':540,'s':false,'b':false,'e':1},
+   {'x':450,'y':540,'s':false,'b':false,'e':4},
     {'x':400,'y':540,'s':false,'b':false,'e':0},
     {'x':350,'y':540,'s':false,'b':false,'e':0},
     {'x':300,'y':540,'s':false,'b':false,'e':0},
@@ -157,7 +157,10 @@ function loadImages(sources, callback) {
         car6:'car6.png',
         winner:'winner.jpg',
         booster:'booster.png',
-        roadend:'RoadEnd.png'
+        roadendl:'RoadEndv2.png',
+        roadendr:'RoadEndv1.png',
+        roadendo:'RoadEnd.png',
+         roadendb:'Roads2.png',
       };
       loadImages(sources, initStage);
 
@@ -324,10 +327,31 @@ Road.prototype={
             width:60,
             height:60
         });
-        var roadEnd = new Kinetic.Image({
+        var roadEndl = new Kinetic.Image({
             x:grid.x+5,
             y:grid.y,
-            image:images.roadend,
+            image:images.roadendl,
+            width:50,
+            height:60
+        });
+         var roadEndr = new Kinetic.Image({
+            x:grid.x+5,
+            y:grid.y,
+            image:images.roadendr,
+            width:50,
+            height:60
+        });
+         var roadEndo = new Kinetic.Image({
+            x:grid.x+5,
+            y:grid.y,
+            image:images.roadendo,
+            width:50,
+            height:60
+        });
+         var roadEndb = new Kinetic.Image({
+            x:grid.x+5,
+            y:grid.y,
+            image:images.roadendb,
             width:50,
             height:60
         });
@@ -350,13 +374,27 @@ Road.prototype={
         stage.add(roadLayer);
         if(grid.e == 1)
         {
-            this.roadInstance=roadEnd;
-            roadLayer.add(roadEnd)
+            this.roadInstance=roadEndl;
+            roadLayer.add(roadEndl)
             stage.add(roadLayer);
         }
-        else
+        else if(grid.e == 2)
         {
-        
+             this.roadInstance=roadEndr;
+            roadLayer.add(roadEndr)
+            stage.add(roadLayer);
+    }
+    else if(grid.e == 3)
+         {
+             this.roadInstance=roadEndo;
+            roadLayer.add(roadEndo)
+            stage.add(roadLayer);
+    }
+    else if(grid.e == 4)
+         {
+             this.roadInstance=roadEndb;
+            roadLayer.add(roadEndb)
+            stage.add(roadLayer);
     }
     if(grid.x == 0 && grid.y == 540 )
     {
@@ -489,6 +527,9 @@ function initStage(images){
                 return carArray[i].position;
             }
         }
+    },
+    addSignal: function(SignalId,Color){
+     console.log("Signal"+SignalId+"Color"+Color);
     }
 
 
