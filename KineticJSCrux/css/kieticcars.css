@@ -12,13 +12,13 @@
 	margin-left: 50px;
 }
 .number #content{
-	margin-left: 90px;
+	margin-left: 120px;
 }
 h2{
 	margin-left: 40px;
 	text-shadow:3px 3px 3px #66625d;
 }
-
+#submit{margin-left: 50px;}
 #logo{
 	margin-left: -70px;
 	box-shadow: 7px 7px 26px;
