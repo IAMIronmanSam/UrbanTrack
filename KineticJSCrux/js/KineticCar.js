@@ -284,7 +284,7 @@ Road.prototype={
     boosterX:0,
     boosterY:0,
     boosterInstance:null,
-    drawBooster:function(stage,roadLayer,images,grid){
+    /*drawBooster:function(stage,roadLayer,images,grid){
         if(this.booster===true)
         {
             var booster = new Kinetic.Image({
@@ -301,23 +301,23 @@ Road.prototype={
             roadLayer.add(booster);
             stage.add(roadLayer);
         }
-    },
+    },*/
     drawBomb : function(stage,roadLayer,images,grid){
-        if(this.bomb===true){
+        
             var placeBomb = new Kinetic.Image({
-                x:grid.x,
-                y:grid.y,
+                x:grid[0],
+                y:grid[1],
                 image:images.bomb,
                 width:40,
                 height:10,
                 title:'Bomb'
             });
-            this.bombX=grid.x;
-            this.bombY=grid.y;
+            this.bombX=grid[0];
+            this.bombY=grid[1];
             this.bombInstance=placeBomb;
             roadLayer.add(placeBomb);
             stage.add(roadLayer);
-        }
+        
     },
     drawRoadPatch : function(roadLayer,stage,images,grid,position){
         var roadPatch = new Kinetic.Image({
@@ -469,8 +469,8 @@ function initStage(images){
     {
      var road = new Road();
      road.drawRoadPatch(roadLayer,stage,images,path.grid[i],i);
-     road.drawBomb(stage,roadLayer,images,path.grid[i]);
-     road.drawBooster(stage,roadLayer,images,path.grid[i]);
+     
+     //road.drawBooster(stage,roadLayer,images,path.grid[i]);
      roadArray.push(road);
     }
    
@@ -528,8 +528,8 @@ function initStage(images){
             }
         }
     },
-    addSignal: function(SignalId,Color){
-     console.log("Signal"+SignalId+"Color"+Color);
+    addSignal: function(grid){
+   road.drawBomb(stage,roadLayer,images,grid);
     }
 
 
