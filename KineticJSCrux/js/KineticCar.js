@@ -148,7 +148,8 @@ function loadImages(sources, callback) {
         grass: 'grass.jpg',
         roadPatch: 'Roads.png',
         cars:'Cars.png',
-        bomb:'signal.png',
+        GSignal:'signal.png',
+        RSignal:'red.png',
         car1:'car1.png',
         car2:'car2.png',
         car3:'car3.png',
@@ -243,8 +244,8 @@ Car.prototype={
       else
       {return false;}
     },
-    checkForBomb : function(){
-        var roadArrStatus = roadArray[this.position].getBomb();
+    checkForSignal : function(){
+        var roadArrStatus = roadArray[this.position].getSignal();
         if(roadArrStatus===true)
         {
             return true;
@@ -273,13 +274,13 @@ function Road(){}
 Road.prototype={
     x:0,
     y:0,
-    bombX:0,
-    bombY:0,    
-    bomb:false,
+    SignalX:0,
+    SignalY:0,    
+    Signal:false,
     booster:false,
     position:0,
     roadInstance:null,
-    bombInstance:null,
+    SignalInstance:null,
     booster:false,
     boosterX:0,
     boosterY:0,
@@ -302,20 +303,22 @@ Road.prototype={
             stage.add(roadLayer);
         }
     },*/
-    drawBomb : function(stage,roadLayer,images,grid){
-        
-            var placeBomb = new Kinetic.Image({
-                x:grid[0],
-                y:grid[1],
-                image:images.bomb,
+    drawSignal : function(stage,roadLayer,images,grid){
+            var gvalue = grid.toString();
+            var gridx = 100*(gvalue.slice(0,1));
+            var gridy = 100*(gvalue.slice(1,2));
+            var placeSignal = new Kinetic.Image({
+                x:gridx,
+                y:gridy,
+                image:images.GSignal,
                 width:40,
                 height:10,
-                title:'Bomb'
+                title:'Signal'
             });
-            this.bombX=grid[0];
-            this.bombY=grid[1];
-            this.bombInstance=placeBomb;
-            roadLayer.add(placeBomb);
+            this.SignalX=gridx;
+            this.SignalY=gridy;
+            this.SignalInstance=placeSignal;
+            roadLayer.add(placeSignal);
             stage.add(roadLayer);
         
     },
@@ -368,7 +371,7 @@ Road.prototype={
         //console.log("Y:"+grid.y)
         this.roadInstance=roadPatch;
         this.booster=grid.b;
-        this.bomb=grid.s;
+        this.Signal=grid.s;
         this.position=position;
         roadLayer.add(roadPatch);
         stage.add(roadLayer);
@@ -504,8 +507,8 @@ function initStage(images){
                     duration:1
                 });
                 carArray[i].position=position;
-                //Bomb Detection
-                if(roadArray[position].bomb===true)
+                //Signal Detection
+                if(roadArray[position].Signal===true)
                 {
                     return 0;
                 }
@@ -529,7 +532,8 @@ function initStage(images){
         }
     },
     addSignal: function(grid){
-   road.drawBomb(stage,roadLayer,images,grid);
+        
+   road.drawSignal(stage,roadLayer,images,grid);
     }
 
 
